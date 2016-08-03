@@ -1,0 +1,153 @@
+@import '../../node_modules/stylus-media-queries/index.styl'
+
+//  Desktop First Method
+
+// Large Devices, Wide Screens
+// +max-screen(1200px)
+
+// Medium Devices, Desktops
++max-screen(992px)
+	
+	.main-menu li
+		padding 0 10px
+
+		a
+			font-size 14px
+
+	.team-member
+		margin-bottom 30px
+
+// Small Devices, Tablets
++max-screen(768px)
+
+	// Disable Animation on Mobile Devices
+	.animated
+		// CSS transitions
+		-o-transition-property none !important
+		-moz-transition-property none !important
+		-ms-transition-property none !important
+		-webkit-transition-property none !important
+		transition-property none !important
+		// CSS transforms
+		-o-transform none !important
+		-moz-transform none !important
+		-ms-transform none !important
+		-webkit-transform none !important
+		transform none !important
+		// CSS animations
+		-webkit-animation none !important
+		-moz-animation none !important
+		-o-animation none !important
+		-ms-animation none !important
+		animation none !important
+
+	nav
+		height 120px
+		line-height 60px
+		background-color #fff
+		position fixed
+		
+	.top-line
+		display none
+		
+	#top-menu
+		background-color #fff
+		
+	.main-menu
+
+		li
+			display block
+			text-align center
+			padding 0
+		
+			a
+				display block
+				
+			a:hover
+				background-color #79B444
+				color #fff
+			
+	.team-member
+		margin-bottom 30px
+	
+	.cooperation
+		padding 20px 0 50px 0
+	
+	.team
+		padding 60px 0 40px 0
+
+// Extra Small Devices, Phones
++max-screen(480px)
+
+	nav
+		height 120px
+		line-height 60px
+		background-color #fff
+		position fixed
+		
+	.top-line
+		display none
+		
+	#top-menu
+		background-color #fff
+		
+	.main-menu
+
+		li
+			display block
+			text-align center
+			padding 0
+		
+			a
+				display block
+				
+			a:hover
+				background-color #79B444
+				color #fff
+			
+	.team-member
+		margin-bottom 30px
+	
+	.cooperation
+		padding 20px 0 50px 0
+	
+	.team
+		padding 60px 0 40px 0
+
+// Custom, iPhone Retina
++max-screen(320px)
+
+	nav
+		height 120px
+		line-height 60px
+		background-color #fff
+		position fixed
+		
+	.top-line
+		display none
+		
+	#top-menu
+		background-color #fff
+		
+	.main-menu
+
+		li
+			display block
+			text-align center
+			padding 0
+		
+			a
+				display block
+				
+			a:hover
+				background-color #79B444
+				color #fff
+			
+	.team-member
+		margin-bottom 30px
+	
+	.cooperation
+		padding 20px 0 50px 0
+	
+	.team
+		padding 60px 0 40px 0

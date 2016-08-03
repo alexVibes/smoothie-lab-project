@@ -1,0 +1,408 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		title Smoothie Lab.
+
+		link(href='libs/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+		link(href='libs/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+
+		link(href='img/favicon.png', rel='shortcut icon', type='image/png')
+		link(href='css/main.css', rel='stylesheet')
+		link(href='css/media.css', rel='stylesheet')
+		link(href='css/fonts.css', rel='stylesheet')
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+		script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+		<!--<![endif]-->
+
+	body#page
+		header
+			nav
+				.container
+					.row
+						.navbar-header
+							button.navbar-toggle.collapsed.btn-menu(data-toggle='collapse', data-target='#top-menu')
+								i.fa.fa-bars.fa-lg(aria-hidden='true')
+							a.navbar-brand.logo(href='index.html')
+								img(src='img/logo.png', alt='Logo')
+
+						#top-menu.collapse.navbar-collapse.navbar-right
+							ul.main-menu.p0
+								li
+									a(href="#mission") Миссия
+								li
+									a(href="#menu") Меню
+								li
+									a(href="#cooperation") Сотрудничество
+								li
+									a(href="#partners") Партнёры
+								li
+									a(href="#blog") Блог
+					.top-line
+
+			.container
+				.row
+					.col-md-8.col-md-offset-2
+						.title-block.text-center
+							h1
+								| Здоровое питание - 
+								span в массы!
+							p Организация работы Healthy баров
+							a(href='#mission')#btn-more.btn-custom Подробнее
+		
+		section#mission.mission
+			.container
+				.row
+					.mission-block
+						.col-md-7.col-md-offset-1
+								.mission-text
+									p Наша миссия состоит в развитии направления здорового питания.
+									p
+										| Мы уверены, что 
+										span по-настоящему здоровая еда может и должна быть божественно вкусной.
+									p Команда Smoothie Lab. сотрудничает с ресторанами, фитнес-клубами, йога-центрами, организовывая работу Healthy Bar - полноценного бара-кондитерской.
+									p.m0 Мы не только распространяем здоровое меню, таким образом мы ещё и доносим идею доступности здоровых продуктов питания и гармоничности полезного меню.
+						.col-md-3
+							.mission-image
+								img.img-responsive(src='img/smoothies_faces.png', alt='Smoothies Faces')
+					.mission-block
+						.col-md-3.col-md-offset-1
+							.mission-image
+								img.img-responsive(src='img/blender.png', alt='Blender')
+						.col-md-7
+							.mission-text
+								p Основной продукт нашего меню - Smoothie, и наша команда занимается развитием культуры его потребления. Мы считаем, что это уникальный продукт, ведь он является:
+								ul
+									li полезным
+									li сытным
+									li питательным
+									li быстрым в приготовлении
+								p Кроме того, Smoothie – это бесконечный поток творчества, красоты и энергии.
+
+		section.advantages
+			.container
+				.row
+					.col-md-6
+						.advantages-item.text-center
+							i.fa.fa-list-ul.fa-4x
+							h3 Разработка Healthy-меню
+					.col-md-6
+						.advantages-item.text-center
+							i.fa.fa-thumbs-o-up.fa-4x
+							h3 Сопровождение в социальных сетях
+					.col-md-6
+						.advantages-item.text-center
+							i.fa.fa-users.fa-4x
+							h3 Обучение персонала
+					.col-md-6
+						.advantages-item.text-center
+							i.fa.fa-skype.fa-4x
+							h3 Возможность удалённых консультаций
+
+		section#menu.menu
+			.container-fluid
+				.row
+					.col-md-3.col-sm-6.p0
+						.menu-item
+							.image-wrap
+								.menu-description.text-center
+									h4 Smoothies
+									p Самые невероятные сочетания фруктов, орехов, ягод, овощей, суперфудов приятно удивят даже самого требовательного гурмана.
+							img.img-responsive(src='img/smoothies.jpg', alt='Smoothies')
+					.col-md-3.col-sm-6.p0
+						.menu-item
+							.image-wrap
+								.menu-description.text-center
+									h4 Green Smoothies
+									p А Вы знали, что сочетания зелени могут быть невероятно вкусными?
+							img.img-responsive(src='img/green_smoothies.jpg', alt='Green Smoothies')
+					.col-md-3.col-sm-6.p0
+						.menu-item
+							.image-wrap
+								.menu-description.text-center
+									h4 Energy Power Smoothies
+									p Меню для тех, кто активно наращивает мышечную массу в спортзале.
+							img.img-responsive(src='img/energy_power_smoothies.jpg', alt='Energy Power Smoothies')
+					.col-md-3.col-sm-6.p0
+						.menu-item
+							.image-wrap
+								.menu-description.text-center
+									h4 Nut MilkShakes
+									p Привычные всем молочные коктейли теперь на основе растительного молока - миндального, фундукового, кокосового и овсяного.
+							img.img-responsive(src='img/milkshakes.jpg', alt='Nut MilkShakes')
+					.col-md-3.col-sm-6.p0
+						.menu-item
+							.image-wrap
+								.menu-description.text-center
+									h4 Detox Juices
+									p Благодаря специальной технологии холодного отжима, мы получаем настоящий эликсир из витаминов и минералов, так необходимых человеку.
+							img.img-responsive(src='img/detox_juices.jpg', alt='Detox Juices')
+					.col-md-3.col-sm-6.p0
+						.menu-item
+							.image-wrap
+								.menu-description.text-center
+									h4 Smoothie Breakfasts
+									p Переворачиваем обыденное представление о том, как может выглядеть здоровый и сытный завтрак.
+							img.img-responsive(src='img/smoothie_breakfasts.jpg', alt='Smoothie Breakfasts')
+					.col-md-3.col-sm-6.p0
+						.menu-item
+							.image-wrap
+								.menu-description.text-center
+									h4 Raw Cakes
+									p Что может быть лучше, чем десерты, которые не вредят фигуре? :)
+							img.img-responsive(src='img/raw_cakes.jpg', alt='Raw Cakes')
+					.col-md-3.col-sm-6.p0
+						.menu-item
+							.image-wrap
+								.menu-description.text-center
+									h4 Raw Bonbons
+									p Конфеты из натуральных сухофруктов, орехов и семечек послужат отличным здоровым перекусом.
+							img.img-responsive(src='img/raw_bonbons.jpg', alt='Raw Bonbons')
+		
+		section#cooperation.cooperation
+			.container
+				.row
+					.col-md-12
+						.title.text-center
+							h5 Сотрудничество
+							p Нажмите на каждый этап, чтобы увидеть подробности.
+				.row
+					.col-md-10.col-md-offset-1
+						.cooperation-items
+							a(href='#').cooperation-item.item-1
+								.text1-wrap.text-center
+									.text1
+										p.m0
+											span 01. 
+											| Организация работы Healthy-бара в Вашем заведении
+										.arrow
+											i.fa.fa-arrow-down(aria-hidden='true')
+								.text2-wrap
+									.text2
+										ul
+											li
+												span Анализ целевой аудитории
+												p Первый и самый важный этап. Мы хорошо знаем свою публику, и для каждого конкретного ресторана это всегда уникальная стратегия привлечения новой аудитории.
+												p Также как и Вы, мы теперь заинтересованы в узнаваемости Вашего заведения.
+											li
+												span Составление меню + поиск и подбор оборудования
+												p Здесь всё начинается с оценки Вашего свободного  пространства:
+													ul
+														li
+															span за Вашей барной стойкой
+															p В случае наличия свободного пространства за Вашей основной стойкой и невозможности установки отдельной барной стойки в зале, мы подбираем необходимое оборудование и детально проектируем новое рабочее место с визуализацией.
+														li
+															span за отдельной барной стойкой
+															p Именно тот вариант, когда Вы хотите поставить отдельную барную стойку в зале, а в тёплое время года - на летней площадке. Возможно, ради этого придется пожертвовать несколькими посадочными местами (1 столиком), однако, при должном подходе такая «рокировка» окупится с лихвой.
+											li
+												span Обучение персонала
+												p Мы берём на себя обучение персонала, а также снабжаем сотрудников методическими пособиями для комфортной работы на Healthy Bar.
+												p + online поддержка в течение 1 месяца после первого дня работы
+												p + внедрение сезонных предложений в течение полного рабочего цикла (1 год)
+										p.m0 Теперь, когда у нас с Вами есть понимание того, где удобнее будет организовать работу Healthy Bar, мы с Вами согласовываем список необходимого оборудования, учитывая меню, цели и бюджет.
+				.row
+					.col-md-10.col-md-offset-1
+						.cooperation-items
+							a(href='#').cooperation-item.item-2
+								.text1-wrap.text-center
+									.text1
+										p.m0
+											span 02. 
+											| Консультации по запуску Healthy-бара в Вашем заведении
+										.arrow
+											i.fa.fa-arrow-down(aria-hidden='true')
+								.text2-wrap
+									.text2
+										ul
+											li Оценка свободного пространства у вас на баре для оборудования или автономной барной стойки в зале;
+											li Анализ целевой аудитории и конкурентной среды в Вашем городе;
+											li Составление меню;
+											li Помощь в поиске и подбору персонала;
+											li Методические пособия и рекомендации для сотрудников;
+											li Оnline консультации в течение 1 месяца после запуска нового направления.
+				.row
+					.col-md-10.col-md-offset-1
+						.cooperation-items
+							a(href='#').cooperation-item.item-3
+								.text1-wrap.text-center
+									.text1
+										p.m0
+											span 03. 
+											| Комплексное открытие заведения
+										.arrow
+											i.fa.fa-arrow-down(aria-hidden='true')
+								.text2-wrap
+									.text2
+										p Мы растём и развиваемся, наша команда находится в непрерывном поиске профессионалов своего дела, которым интересна тема здорового питания и близка наша идея.
+										p.m0 Если Вы хотите открыть заведение здорового питания (Healthy-кондитерская, вегетарианское кафе/ресторан), но не знаете, как это сделать, мы готовы помочь Вам в этом.
+				.row
+					.col-md-10.col-md-offset-1
+						.cooperation-items
+							a(href='#').cooperation-item.item-4
+								.text1-wrap.text-center
+									.text1
+										p.m0
+											span 04. 
+											| Связаться с нами
+										.arrow
+											i.fa.fa-arrow-down(aria-hidden='true')
+								.text2-wrap
+									.text2.text-center
+										form(id='feedback')
+											input(type='text', name='name', required='required')
+											input(type='text', name='phone', required='required')
+											input(type='submit', value='Заказать звонок')
+
+		section#partners.partners
+			.container
+				.row
+					.col-md-12
+						.title.text-center
+							h3 Друзья и партнёры
+
+					.col-md-3.col-sm-6
+						.partner.text-center
+							img.img-responsive.mauto(src='img/partners-1.jpg' alt='Зелёный театр')
+							h4 Зелёный театр
+					.col-md-3.col-sm-6
+						.partner.text-center
+							img.img-responsive.mauto(src='img/partners-2.jpg' alt='Зелень')
+							h4 Зелень
+					.col-md-3.col-sm-6
+						.partner.text-center
+							img.img-responsive.mauto(src='img/partners-3.jpg' alt='Salat Bar')
+							h4 Salat Bar
+					.col-md-3.col-sm-6
+						.partner.text-center
+							img.img-responsive.mauto(src='img/partners-4.jpg' alt='Fresh & Go')
+							h4 Fresh &amp; Go
+
+		section#blog.blog
+			.container
+				.row
+					.col-md-12
+						.title.text-center
+							h5 Блог
+							p Здесь будем делиться рецептами, адаптированными к приготовлению в домашних условиях
+				.row
+					.col-md-10.col-md-offset-1
+						.blog-items
+							a(href='#').blog-item.item-1
+								.text1-wrap.text-center
+									.text1
+										p.m0
+											span 01. 
+											| Шелковичное мороженое
+										.arrow
+											i.fa.fa-arrow-down(aria-hidden='true')
+								.text2-wrap
+									.text2
+										.col-md-6
+											.blog-item-img
+												img.img-responsive(src='img/blog-item-1-img.jpg', alt='Шелковичное мороженое')
+										.col-md-6
+											.blog-item-text
+												p
+													span Отметка. НЕ по вегану.
+												p Ингредиенты:
+												ul
+													li 1,5 стакана шелковицы
+													li 1/2 стакана тростникового сахара
+													li 1 ч/л ванильного экстракта
+													li 50 мл сока апельсина 
+													li 300 мл сливок 33%
+
+												p Сливки взбить отдельно. Ягоды взбить в блендере вместе с сахаром, влить сок  и перемешать. Дать настоять 10-15 минут. Сливки аккуратно смешать с ягодным пюре. Полученную массу  разлить в формочки. Замораживать 4-5 часов.
+												p Приятного аппетита!
+
+				.row
+					.col-md-10.col-md-offset-1
+						.blog-items
+							a(href='#').blog-item.item-2
+								.text1-wrap.text-center
+									.text1
+										p.m0
+											span 02. 
+											| Универсальный лимонад
+										.arrow
+											i.fa.fa-arrow-down(aria-hidden='true')
+								.text2-wrap
+									.text2
+										.col-md-6
+											.blog-item-text
+												p Следующий рецепт от команды Smoothie Lab. - 
+													span "Универсальный лимонад".
+												p Уникальность данного лимонада в том, что готовится сначала концентрат, который разбавляется водой и льдом. Таким образом, в приготовлении лимонада можно регулировать как концентрацию, так и температуру напитка.
+												p И, наконец, то, что делает этот рецепт универсальным - вы можете свободно заменять один 
+													span основной ингредиент 
+													| на другой. Остальные "вспомогательные" ингредиенты при этом не меняются.
+												p Для примера предлагаем сразу 2 рецепта (на 4 порции):
+												p
+													span.raspberry Малиновый
+												ul
+													li малиновый фреш****: 320 мл
+													li лимонный фреш**: 160 мл
+													li сироп из коричневого сахара***: 320 мл 320 мл
+												p
+													span.orange Апельсиновый
+												ul
+													li апельсиновый фреш*: 320 мл
+													li лимонный фреш: 160 мл
+													li сироп из коричневого сахара: 320 мл
+												p *выжимаем сок из 5-6 апельсинов с помощью обычной (ручной) соковыжималки для цитрусовых.
+												p **та же технология, 3-4 лимона.
+												p ***растворяем 375 г сахара в 185 л воды (можно слегка подогревать на плите, помешивая)
+												p ****свежую малину (400 г) взбиваем в блендере со 100 г воды), полученную однородную массу процеживаем через марлю.
+												p Все ингредиенты смешать и хранить в холодильнике (можно в морозильнике). 
+												p На 1 стакан - 80 мл полученного концентрата, добавить лед и воду (можно газированную).
+												p 
+													span Для цитрусовых фрешей рекомендуется использовать тонкокорые фрукты.
+										.col-md-6
+											.blog-item-img.text-center
+												img.img-responsive(src='img/blog-item-2-img-1.jpg', alt='Универсальный лимонад')
+												img.img-responsive(src='img/blog-item-2-img-2.jpg', alt='Универсальный лимонад')
+
+		footer
+			.main-footer
+				.container
+					.row
+						.col-md-6.col-sm-6
+							.footer-item.text-center
+								h5 Локация
+								p 
+									| Украина,
+									span Одесса
+						.col-md-6.col-sm-6
+							.footer-item.text-center
+								h5 Социальные сети
+								a.btn-social(href='https://facebook.com/raw.eat', target='_blank')
+									i.fa.fa-facebook(aria-hidden='true')
+								a.btn-social(href='https://vk.com/love_smoothielab', target='_blank')
+									i.fa.fa-vk(aria-hidden='true')
+								a.btn-social(href='https://instagram.com/smthie.lab/', target='_blank')
+									i.fa.fa-instagram(aria-hidden='true')
+			.copyright-block
+				.container
+					.row
+						.col-md-4.col-md-offset-4
+							.copyright-text.text-center
+								p.m0 Copyright &#169; 2016, Smoothie Lab.
+								p.m0
+									| Made with 
+									i.fa.fa-heart
+									|  by alexVibes
+
+		.scrollup-block
+			a#scrollup.text-center(href='#', title='Вернуться к началу')
+				i.fa.fa-angle-up.fa-2x(aria-hidden='true')
+
+		script(src='libs/jquery/jquery-2.2.4.min.js')
+		script(src='libs/bootstrap/js/bootstrap.min.js')
+		script(src='js/script.js')
