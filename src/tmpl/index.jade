@@ -56,7 +56,8 @@ html
 								span в массы!
 							p Организация работы Healthy баров
 							a(href='#mission')#btn-more.btn-custom Подробнее
-		
+							
+
 		section#mission.mission
 			.container
 				.row
@@ -89,19 +90,19 @@ html
 		section.advantages
 			.container
 				.row
-					.col-md-6
+					.col-sm-6
 						.advantages-item.text-center
 							i.fa.fa-list-ul.fa-4x
 							h3 Разработка Healthy-меню
-					.col-md-6
+					.col-sm-6
 						.advantages-item.text-center
 							i.fa.fa-thumbs-o-up.fa-4x
 							h3 Сопровождение в социальных сетях
-					.col-md-6
+					.col-sm-6
 						.advantages-item.text-center
 							i.fa.fa-users.fa-4x
 							h3 Обучение персонала
-					.col-md-6
+					.col-sm-6
 						.advantages-item.text-center
 							i.fa.fa-skype.fa-4x
 							h3 Возможность удалённых консультаций
@@ -253,12 +254,20 @@ html
 											| Связаться с нами
 										.arrow
 											i.fa.fa-arrow-down(aria-hidden='true')
-								.text2-wrap
-									.text2.text-center
-										form(id='feedback')
-											input(type='text', name='name', required='required')
-											input(type='text', name='phone', required='required')
-											input(type='submit', value='Заказать звонок')
+								.text2-wrap.text-center
+									.text2
+										form(id='feedback', method='post', action='')
+											p 1. Название Вашего предприятия, город
+											input.mauto(type='text', name='name', value='')
+											p 2. Средний чек (для кафе, ресторанов)
+											input.mauto(type='text', name='averageCheck', value='')
+											p 3. Считаете ли Вы, что дополнительное здоровое меню будет полезно Вашему заведению и Вашим гостям?
+											input.mauto(type='text', name='benefit', value='')
+											p 4. Какой из форматов сотрудничества Вам предпочтительнее? Готовы к Вашим предложениям.
+											textarea.mauto(type='text', name='format', value='')
+											p 5. Ваши контакты (e-mail, телефон).
+											input.mauto(type='text', name='contacts', value='')
+											input.mauto(type='submit', value='Отправить заявку')
 
 		section#partners.partners
 			.container
@@ -268,21 +277,17 @@ html
 							h3 Друзья и партнёры
 
 					.col-md-3.col-sm-6
-						.partner.text-center
+						.text-center
 							img.img-responsive.mauto(src='img/partners-1.jpg' alt='Зелёный театр')
-							h4 Зелёный театр
 					.col-md-3.col-sm-6
-						.partner.text-center
+						.text-center
 							img.img-responsive.mauto(src='img/partners-2.jpg' alt='Зелень')
-							h4 Зелень
 					.col-md-3.col-sm-6
-						.partner.text-center
+						.text-center
 							img.img-responsive.mauto(src='img/partners-3.jpg' alt='Salat Bar')
-							h4 Salat Bar
 					.col-md-3.col-sm-6
-						.partner.text-center
+						.text-center
 							img.img-responsive.mauto(src='img/partners-4.jpg' alt='Fresh & Go')
-							h4 Fresh &amp; Go
 
 		section#blog.blog
 			.container
